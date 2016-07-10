@@ -80,12 +80,13 @@ ul#pages {
       text-decoration: none; }
     ul#pages li.page h1 {
       margin: 0;
-      padding: 20px 0;
+      /* padding: 20px 0; */
+      padding-top: 20px;
       font-weight: 100;
       text-transform: uppercase; }
     ul#pages li.page .meta .date {
       color: #888;
-      margin: 10px; }
+      margin: 5px; }
     ul#pages li.page .meta .tagline {
       padding-bottom: 25px; }
 
