@@ -1,0 +1,211 @@
+/*
+ * CSS for alexb.io
+ * please don't steal
+ */
+
+/* Variables */
+
+/* colors */
+$gray: #ccc;
+$darkgray: #888;
+$black: #000;
+$white: #fff;
+$darkwhite: darken($white, 3%);
+
+/* $accent: #294936; */
+$accent: #2EBE62;
+
+/* sizes */
+$pagewidth: 700px;
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "proxima-nova", sans-serif;
+  overflow-x: hidden;
+}
+
+.wf-loading {
+  visibility: hidden;
+}
+
+.wf-active, .wf-inactive {
+  visibility: visible;
+}
+
+#body {
+  max-width: $pagewidth;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+p, li {
+  font-size: 14pt;
+}
+
+/* Navbar styles */
+nav {
+  padding: 8px;
+  border-bottom: 1px solid $gray; 
+  a.title {
+    color: $black;
+    font-size: 14pt;
+    text-decoration: none;
+    font-family: georgia, times;
+    &:hover {
+      color: $accent;
+    }
+  }
+  span.left-title {
+    float: right;
+    font-variant: small-caps;
+  }
+  ul {
+    display: inline;
+    padding-left: 20px;
+    li {
+      list-style: none;
+      font-variant: small-caps;
+      display: inline;
+      padding-right: 5px;
+      a {
+        text-decoration: none;
+        color: $black;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+
+/* Index styles */
+ul#pages {
+  text-align: center;
+  padding: 0;
+  li.page {
+    list-style: none;
+    /* padding-bottom: 25px; */
+    &:first-child {
+      border-radius: 5px 5px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 5px 5px;
+    }
+    &:only-child {
+      border-radius: 5px;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray;
+    }
+    &:hover {
+      background-color: lighten($gray, 18%);
+    }
+    a {
+      color: $black;
+      text-decoration: none;
+    }
+    h1 {
+      margin: 0;
+      padding: 20px 0;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+    .meta {
+      .date {
+        color: $darkgray;
+        margin: 10px;
+      }
+      .tagline {
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
+
+/* Post and page styles */
+.post, .page {
+  margin: 25px 0;
+  .title {
+    border-bottom: 1px solid $gray;
+    text-align: center;
+    h1 {
+      $direction: to left;
+      margin: 0;
+      font-size: 44px;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: .4em;
+      padding-left: .4em;
+    }
+    h3 {
+      color: $darkgray;
+      margin: 15px 0;
+      font-weight: normal;
+    }
+  }
+  .footnotes {
+    li {
+      a.footnote-return {
+        text-decoration: none;
+        &:visited {
+          color: $accent;
+        }
+      }
+    }
+  }
+  .footnote-ref {
+    a {
+      text-decoration: none;
+      color: $accent;
+      &:hover {
+        text-decoration: none;
+      }
+      &:visited {
+        color: $accent;
+      }
+    }
+  }
+  a {
+    color: $accent;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      color: $accent;
+    }
+  }
+  pre {
+    code {
+      display: block;
+      margin: 0 -100%;
+      padding: 0.25rem 100%;
+      font-size: 16px;
+      font-family: "droid-sans-mono", monospace;
+      border-radius: 5px;
+      overflow: visible;
+      background-color: $darkwhite;
+    }
+  }
+  code {
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: $darkwhite;
+  }
+  blockquote {
+    font-style: italic;
+  }
+  hr {
+    border: none;
+    border-bottom: 1px solid $gray;
+  }
+}

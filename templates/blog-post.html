@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+<div class="post">
+  <div class="title">
+    <h1>{{ this.title }}</h1>
+    <h3><span class="date">{{ this.pub_date.strftime('%a, %b %d, %Y') }}</span></h3>
+  </div>
+  <div class="content">
+    {{ this.body }}
+  </div>
+</div>
+{% endblock %}

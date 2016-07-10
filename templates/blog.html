@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Posts{% endblock %}
+
+{% block body %}
+<ul id="pages">
+  {% for post in this.children %}
+  <li class="page">
+    <a href="{{ post|url }}">
+      <h1>{{ post.title }}</h1>
+      <div class="meta">
+        <div class="date">
+          {{ post.pub_date.strftime('%a, %b %d, %Y') }}
+        </div>
+        <div class="tagline">
+          {{ post.tagline }}
+        </div>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

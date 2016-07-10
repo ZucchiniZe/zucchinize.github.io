@@ -1,0 +1,12 @@
+[project]
+name = something-random
+url = https://alexb.io
+
+[servers.pages]
+name = github pages
+enabled = yes
+default = yes
+target = ghpages://zucchinize/zucchinize.github.io?cname=alexb.io
+
+[packages]
+lektor-webpack-support = 0.1
