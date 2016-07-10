@@ -1,0 +1,144 @@
+/*
+ * CSS for alexb.io
+ * please don't steal
+ */
+/* Variables */
+/* colors */
+/* $accent: #294936; */
+/* sizes */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "proxima-nova", sans-serif;
+  overflow-x: hidden; }
+
+.wf-loading {
+  visibility: hidden; }
+
+.wf-active, .wf-inactive {
+  visibility: visible; }
+
+#body {
+  max-width: 700px;
+  margin: 0 auto; }
+
+p, li {
+  font-size: 14pt; }
+
+/* Navbar styles */
+nav {
+  padding: 8px;
+  border-bottom: 1px solid #ccc; }
+  nav a.title {
+    color: #000;
+    font-size: 14pt;
+    text-decoration: none;
+    font-family: georgia, times; }
+    nav a.title:hover {
+      color: #2EBE62; }
+  nav span.left-title {
+    float: right;
+    font-variant: small-caps; }
+  nav ul {
+    display: inline;
+    padding-left: 20px; }
+    nav ul li {
+      list-style: none;
+      font-variant: small-caps;
+      display: inline;
+      padding-right: 5px; }
+      nav ul li a {
+        text-decoration: none;
+        color: #000; }
+        nav ul li a:hover {
+          color: #2EBE62; }
+
+/* Index styles */
+ul#pages {
+  text-align: center;
+  padding: 0; }
+  ul#pages li.page {
+    list-style: none;
+    /* padding-bottom: 25px; */ }
+    ul#pages li.page:first-child {
+      border-radius: 5px 5px 0 0; }
+    ul#pages li.page:last-child {
+      border-radius: 0 0 5px 5px; }
+    ul#pages li.page:only-child {
+      border-radius: 5px; }
+    ul#pages li.page:not(:last-child) {
+      border-bottom: 1px solid #ccc; }
+    ul#pages li.page:hover {
+      background-color: #fafafa; }
+    ul#pages li.page a {
+      color: #000;
+      text-decoration: none; }
+    ul#pages li.page h1 {
+      margin: 0;
+      padding: 20px 0;
+      font-weight: 100;
+      text-transform: uppercase; }
+    ul#pages li.page .meta .date {
+      color: #888;
+      margin: 10px; }
+    ul#pages li.page .meta .tagline {
+      padding-bottom: 25px; }
+
+/* Post and page styles */
+.post, .page {
+  margin: 25px 0; }
+  .post .title, .page .title {
+    border-bottom: 1px solid #ccc;
+    text-align: center; }
+    .post .title h1, .page .title h1 {
+      margin: 0;
+      font-size: 44px;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: .4em;
+      padding-left: .4em; }
+    .post .title h3, .page .title h3 {
+      color: #888;
+      margin: 15px 0;
+      font-weight: normal; }
+  .post .footnotes li a.footnote-return, .page .footnotes li a.footnote-return {
+    text-decoration: none; }
+    .post .footnotes li a.footnote-return:visited, .page .footnotes li a.footnote-return:visited {
+      color: #2EBE62; }
+  .post .footnote-ref a, .page .footnote-ref a {
+    text-decoration: none;
+    color: #2EBE62; }
+    .post .footnote-ref a:hover, .page .footnote-ref a:hover {
+      text-decoration: none; }
+    .post .footnote-ref a:visited, .page .footnote-ref a:visited {
+      color: #2EBE62; }
+  .post a, .page a {
+    color: #2EBE62;
+    text-decoration: none; }
+    .post a:hover, .page a:hover {
+      text-decoration: underline; }
+    .post a:visited, .page a:visited {
+      color: #2EBE62; }
+  .post pre code, .page pre code {
+    display: block;
+    margin: 0 -100%;
+    padding: 0.25rem 100%;
+    font-size: 16px;
+    font-family: "droid-sans-mono", monospace;
+    border-radius: 5px;
+    overflow: visible;
+    background-color: #f7f7f7; }
+  .post code, .page code {
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: #f7f7f7; }
+  .post blockquote, .page blockquote {
+    font-style: italic; }
+  .post hr, .page hr {
+    border: none;
+    border-bottom: 1px solid #ccc; }
